@@ -4,4 +4,4 @@ from django.views import View
 
 class Blog(View):
     def Home(request):
-        return HttpResponse('Hello World')
+        return render(request, 'blog/blog.html', {'title' : 'Home'})
